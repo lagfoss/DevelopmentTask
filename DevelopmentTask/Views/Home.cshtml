@@ -1,0 +1,16 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.Home>
+@using ContentModels = Umbraco.Web.PublishedModels;
+@{
+	Layout = "master.cshtml";
+}
+
+    <div class="hero">
+        <div class="wrapper">
+            <H1>@Model.Value("heroheadline")</H1>
+            @Model.Value("herotext")
+        </div>
+    </div>
+    <section class="wrapper">
+        <h2>@Model.Value("productsheadline")</h2>
+        <h4>@Model.Value("productstext")</h4>
+    </section>

@@ -1,0 +1,33 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
+@{
+	Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="~/css/style.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        @Html.Partial("Navigation")
+    </header>
+
+        @RenderBody()
+
+    <footer>
+        <div class="wrapper">
+
+            @Model.Value("footertext")
+
+            @{
+                var typedMediaPickerSingle = Model.Value<IPublishedContent>("footerlogo");
+                if (typedMediaPickerSingle != null)
+                {
+                    <img src="@typedMediaPickerSingle.Url" style="width:300px" alt="@typedMediaPickerSingle.Value("alt")" />
+                }
+            }
+        </div>
+    </footer>
+</body>
+</html>

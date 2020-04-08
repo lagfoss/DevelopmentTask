@@ -1,0 +1,94 @@
+﻿h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0; }
+
+body {
+  margin: 0;
+  font-family: Arial; }
+
+.wrapper {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding-right: 30px;
+  padding-left: 30px; }
+
+h1 {
+  color: #47054A; }
+
+h2 {
+  color: #5C245F; }
+
+header {
+  background-color: #BE9BC0; }
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px; }
+  header .header__logo {
+    height: 40px; }
+  header nav ul {
+    list-style-type: none;
+    overflow: hidden;
+    margin: 0;
+    font-size: 22px;
+    display: flex;
+    align-items: end; }
+    header nav ul li {
+      margin-left: 30px; }
+    header nav ul a {
+      text-decoration: none;
+      color: #FEE7FF; }
+    header nav ul .nav__link {
+      color: #5C245F; }
+    header nav ul .nav__link:hover {
+      color: #47054A;
+      text-shadow: 0px 0px 5px #5C245F; }
+
+.hero {
+  background-color: #BE9BC0;
+  color: #FEE7FF; }
+
+footer {
+  background-color: #5C245F;
+  color: #AA81AC; }
+
+footer a {
+  text-decoration: none;
+  color: inherit; }
+
+.signin {
+  background-image: url("../Image/login2.png");
+  background-size: 100%;
+  height: 650px;
+  position: relative; }
+
+.signin__wrapper {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 30px;
+  width: 400px;
+  height: 350px;
+  background-color: #808080; }
+  .signin__wrapper input {
+    width: 100%;
+    margin: 8px 0px 20px 0px;
+    padding: 10px 0 10px 10px;
+    box-sizing: border-box; }
+  .signin__wrapper .btn-wrapper {
+    position: absolute;
+    bottom: 30px;
+    right: 30px; }
+  .signin__wrapper .action-link {
+    float: right; }
+  .signin__wrapper .signin__email, .signin__wrapper .signin__password {
+    margin: 0; }
+  .signin__wrapper .signin__title {
+    padding-bottom: 20px; }
+  .signin__wrapper label {
+    display: inline-block; }
+  .signin__wrapper h2 {
+    text-align: center; }

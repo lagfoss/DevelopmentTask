@@ -1,0 +1,146 @@
+@import "reset";
+@import "vars";
+@import "mixins";
+
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+.wrapper {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+h1 {
+    color: $H1Color;
+}
+
+h2 {
+    color: $H2Color;
+}
+
+//HEADER & NAVIGATION
+header {
+    background-color: $BgColor;
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 30px;
+    }
+
+    .header__logo {
+        height: 40px;
+    }
+
+    nav ul {
+        list-style-type: none;
+        overflow: hidden;
+        margin: 0;
+        font-size: 22px;
+        display: flex;
+        align-items: end;
+
+        li {
+            margin-left: 30px;
+        }
+
+        a {
+            text-decoration: none;
+            color: $LightFontColor;
+        }
+
+        .nav__link {
+            color: $H2Color;
+        }
+
+        .nav__link:hover {
+            color: $H1Color;
+            text-shadow: 0px 0px 5px $H2Color;
+        }
+    }
+}
+
+
+//HERO
+.hero {
+    background-color: $BgColor;
+    color: $LightFontColor;
+}
+
+
+//FOOTER
+footer {
+    background-color: $FooterBgColor;
+    color: $FooterFontColor;
+}
+
+footer a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+
+
+
+.signin {
+    background-image: url('../Image/login2.png');
+    background-size: 100%;
+    height: 650px;
+    position: relative;
+}
+//SIGNIN FORM
+.signin__wrapper {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 30px;
+    width: 400px;
+    height: 350px;
+    background-color: #808080;
+
+    input {
+        width: 100%;
+        margin: 8px 0px 20px 0px;
+        padding: 10px 0 10px 10px;
+        box-sizing: border-box;
+    }
+    //button positioning using the padding 30px for bomttom and left
+    .btn-wrapper {
+        position: absolute;
+        bottom: 30px;
+        right: 30px;
+    }
+
+    .action-link {
+        float: right;
+    }
+
+    .signin__email, .signin__password {
+        margin: 0;
+    }
+
+    .signin__title {
+        padding-bottom: 20px;
+    }
+
+    .signin__button {
+        
+    }
+
+    label {
+        display: inline-block;
+    }
+
+    h2 {
+        text-align: center;
+    }
+}
