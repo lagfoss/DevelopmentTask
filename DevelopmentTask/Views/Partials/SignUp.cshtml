@@ -53,8 +53,6 @@ else
 {
     using (Html.BeginUmbracoForm<UmbRegisterController>("HandleRegisterMember"))
     {
-        <fieldset>
-            <legend>Register Member</legend>
 
             @Html.ValidationSummary("registerModel", true)
 
@@ -73,7 +71,7 @@ else
             @Html.ValidationMessageFor(m => registerModel.Password)
             <br />
 
-            @if (registerModel.MemberProperties != null)
+            if (registerModel.MemberProperties != null)
             {
                 @*
                     It will only displays properties marked as "Member can edit" on the "Info" tab of the Member Type.
@@ -98,7 +96,7 @@ else
             @Html.HiddenFor(m => registerModel.RedirectUrl)
             @Html.HiddenFor(m => registerModel.UsernameIsEmail)
 
-            <button>Sign Up</button>
-        </fieldset>
+            <button type="submit" class="signin__button">Sign Up</button>
+
     }
 }

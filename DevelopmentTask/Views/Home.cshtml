@@ -55,3 +55,22 @@
             <a class="contact__button " href="#"><i class="fas fa-headset"></i>@Model.Value("productscontactbutton")</a>
         </div>
     </main>
+
+    <footer>
+        <div class="wrapper">
+            <div class="footer__content">
+                <div class="footer__text">
+                    @Model.Value("footertext")
+                </div>
+                <div class="footer__logo">
+                    @{
+                        var typedMediaPickerSingle = Model.Value<IPublishedContent>("footerlogo");
+                        if (typedMediaPickerSingle != null)
+                        {
+                            <img src="@typedMediaPickerSingle.Url" style="width:300px" alt="@typedMediaPickerSingle.Value("alt")" />
+                        }
+                    }
+                </div>
+            </div>
+        </div>
+    </footer>

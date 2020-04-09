@@ -52,7 +52,7 @@ header {
         list-style-type: none;
         overflow: hidden;
         margin: 0;
-        font-size: 20px;;
+        font-size: 20px;
         display: flex;
         align-items: end;
 
@@ -205,10 +205,37 @@ footer {
 
 
 .signin {
-    background-image: url('../Image/login2.png');
-    background-size: 100%;
+    background-color: $BgColor;
     height: 650px;
     position: relative;
+
+    .signin__title {
+        position: absolute;
+        text-align: center;
+        margin: 40px;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+
+    a {
+        position: absolute;
+        left: 0;
+        right: 0;
+        text-align: center;
+        text-decoration: none;
+        color: $LightFontColor;
+        font-size: 20px;
+    }
+
+    .signup__link {
+        bottom: 75px;
+    }
+
+    .forgot__link {
+        bottom: 50px;
+    }
 }
 //SIGNIN FORM
 .signin__wrapper {
@@ -221,23 +248,25 @@ footer {
     padding: 30px;
     width: 400px;
     height: 350px;
-    background-color: #808080;
+    background-color: white;
+    border-radius: 10px;
+
+    label {
+        display: inline-block;
+        color: #A28DA3;
+        font-size: $pSize;
+    }
 
     input {
         width: 100%;
         margin: 8px 0px 20px 0px;
-        padding: 10px 0 10px 10px;
+        padding: 15px 0 15px 10px;
         box-sizing: border-box;
-    }
-    //button positioning using the padding 30px for bomttom and left
-    .btn-wrapper {
-        position: absolute;
-        bottom: 30px;
-        right: 30px;
-    }
-
-    .action-link {
-        float: right;
+        border-radius: 10px;
+        border: none;
+        background-color: #F5EFF5;
+        font-size: $pSize;
+        color: $H2Color;
     }
 
     .signin__email, .signin__password {
@@ -249,14 +278,14 @@ footer {
     }
 
     .signin__button {
-        
+        @include buttonPrimary();
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
     }
 
-    label {
-        display: inline-block;
-    }
-
-    h2 {
-        text-align: center;
+    .signin__button:hover {
+        background-color: $H1Color;
     }
 }

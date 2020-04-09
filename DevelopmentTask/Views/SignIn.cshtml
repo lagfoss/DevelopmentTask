@@ -7,13 +7,11 @@
 
 
 
-    <main>
+    <main class="signin">
         <h2 class="signin__title">Sign In</h2>
-        <section class="signin">
             <div class="signin__wrapper">
                 @Html.Partial("SignIn")
             </div>
-        </section>
-        <a href="/SignUp">Sign Up</a>
-        <a href="#">Forgot password?</a>
+        <a class="signup__link" href="/SignUp">Sign Up</a>
+        <a class="forgot__link" href="#">Forgot password?</a>
     </main>
