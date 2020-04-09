@@ -197,6 +197,19 @@ footer {
     background-color: #F5EFF5;
     font-size: 16px;
     color: #5C245F; }
+  .signin__wrapper .checkbox {
+    text-align: center;
+    margin-left: -100px; }
+  .signin__wrapper .checkbox label {
+    display: inline-block;
+    padding-right: 10px;
+    white-space: nowrap;
+    width: 15px;
+    border-radius: 5px;
+    border-color: #A28DA3; }
+  .signin__wrapper .checkbox input {
+    border-radius: 5px;
+    border-color: #A28DA3; }
   .signin__wrapper .signin__email, .signin__wrapper .signin__password {
     margin: 0; }
   .signin__wrapper .signin__title {

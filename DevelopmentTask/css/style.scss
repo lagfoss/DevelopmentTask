@@ -269,6 +269,26 @@ footer {
         color: $H2Color;
     }
 
+    .checkbox {
+        text-align: center;
+        margin-left: -100px;
+    }
+
+    .checkbox label {
+        display: inline-block;
+        padding-right: 10px;
+        white-space: nowrap;
+        width: 15px;
+        border-radius: 5px;
+        border-color: #A28DA3;
+    }
+
+    .checkbox input {
+        border-radius: 5px;
+        border-color: #A28DA3;
+    }
+
+
     .signin__email, .signin__password {
         margin: 0;
     }
