@@ -20,38 +20,38 @@
             <div class="product__container">
                 <h3>@Model.Value("product1name")</h3>
                 @Model.Value("product1items")
-                <a href="#">
-                    @Model.Value("product1price")<p> /måned</p>
-                    <p>Ekskl. moms</p>
+                <a class="button" href="#">
+                    <p>@Model.Value("product1price")<i> /måned</i><br>
+                    <i class="moms">Ekskl. moms</i></p>
                 </a>
             </div>
             <div class="product__container">
                 <h3>@Model.Value("product2name")</h3>
                 @Model.Value("product2items")
-                <a href="#">
-                    @Model.Value("product2price")<p> /måned</p>
-                    <p>Ekskl. moms</p>
+                <a class="button" href="#">
+                    <p>@Model.Value("product2price")<i> /måned</i><br>
+                    <i class="moms">Ekskl. moms</i></p>
                 </a>
             </div>
             <div class="product__container">
                 <h3>@Model.Value("product3name")</h3>
                 @Model.Value("product3items")
-                <a href="#">
-                    @Model.Value("product3price")<p> /måned</p>
-                    <p>Ekskl. moms</p>
+                <a class="button" href="#">
+                    <p>@Model.Value("product3price")<i> /måned</i><br>
+                    <i class="moms">Ekskl. moms</i></p>
                 </a>
             </div>
             <div class="product__container">
                 <h3>@Model.Value("product4name")</h3>
                 @Model.Value("product4items")
-                <a href="#">
-                    @Model.Value("product4price")<p> /måned</p>
-                    <p>Ekskl. moms</p>
+                <a class="button" href="#">
+                    <p>@Model.Value("product4price")<i> /måned</i><br>
+                    <i class="moms">Ekskl. moms</i></p>
                 </a>
             </div>
         </section>
         <div class="products__contact">
             @Model.Value("productscontacttext")
-            <a href="#"><i class="fas fa-headset"></i>@Model.Value("productscontactbutton")</a>
+            <a class="contact__button " href="#"><i class="fas fa-headset"></i>@Model.Value("productscontactbutton")</a>
         </div>
     </main>

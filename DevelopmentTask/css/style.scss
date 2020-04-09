@@ -16,11 +16,22 @@ body {
 
 h1 {
     color: $H1Color;
-    font-size: 70px;
+    font-size: $H1Size;
 }
 
 h2 {
     color: $H2Color;
+    font-size: $H2Size;
+}
+
+h3 {
+    color: $H2Color;
+    font-size: $H3Size;
+}
+
+h4 {
+    color: $H4Color;
+    font-size: $H4Size;
 }
 
 //HEADER & NAVIGATION
@@ -41,7 +52,7 @@ header {
         list-style-type: none;
         overflow: hidden;
         margin: 0;
-        font-size: 22px;
+        font-size: 20px;;
         display: flex;
         align-items: end;
 
@@ -67,11 +78,14 @@ header {
 
 //HERO
 .hero {
+    background-color: $BgColor;
+    color: $LightFontColor;
     height: 100vh;
+    margin-bottom: 80px;
 }
 
 .hero__text {
-    max-width: 500px;
+    max-width: 600px;
     padding-top: 200px;
 
     h1 {
@@ -79,6 +93,7 @@ header {
     }
 
     p {
+        font-size: $pSize;
         line-height: 1.5;
     }
 }
@@ -86,39 +101,106 @@ header {
 //PRODUCTS FRONTPAGE
 .products__overview {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .product__container {
-    margin: auto;
+    height: 500px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: 0px 0px 5px 0px rgba(146,36,182,0.2);
+    position: relative;
+
+    ul {
+        padding-left: 20px;
+    }
+
+    li {
+        color: #866F9E;
+        font-size: $pSize;
+        margin-bottom: 10px;
+    }
+
+    li::marker {
+        color: #F2F2FF;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .button {
+        position: absolute;
+        bottom: 0;
+        left: 10%;
+        width: 80%;
+    }
+
+    .button p {
+        padding: 20px;
+        text-align: center;
+        background-color: $BtnLightColor;
+        border-radius: 10px;
+        font-weight: bold;
+        color: $H2Color;
+
+        i {
+            color: #9B689E;
+            font-weight: normal;
+        }
+
+        .moms {
+            font-size: 14px;
+        }
+    }
 }
 
 .products__contact {
     text-align: center;
     width: 50%;
     margin: auto;
+    font-size: $pSize;
+    color: #674E68;
+
+    p {
+        line-height: 1.5;
+        margin-bottom: 30px;
+    }
+
+    .contact__button {
+        @include buttonPrimary();
+    }
+
+    .contact__button:hover {
+        background-color: $H1Color;
+    }
 }
-
-
-//HERO
-.hero {
-    background-color: $BgColor;
-    color: $LightFontColor;
-}
-
 
 //FOOTER
 footer {
     background-color: $FooterBgColor;
     color: $FooterFontColor;
+    margin-top: 100px;
+
+    .footer__content {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 40px 0;
+        font-size: 20px;
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .footer__logo {
+            display: flex;
+            align-items: end;
+        }
+    }
 }
-
-footer a {
-    text-decoration: none;
-    color: inherit;
-}
-
-
-
 
 
 

@@ -18,16 +18,20 @@
 
     <footer>
         <div class="wrapper">
-
-            @Model.Value("footertext")
-
-            @{
-                var typedMediaPickerSingle = Model.Value<IPublishedContent>("footerlogo");
-                if (typedMediaPickerSingle != null)
-                {
-                    <img src="@typedMediaPickerSingle.Url" style="width:300px" alt="@typedMediaPickerSingle.Value("alt")" />
-                }
-            }
+            <div class="footer__content">
+                <div class="footer__text">
+                    @Model.Value("footertext")
+                </div>
+                <div class="footer__logo">
+                    @{
+                        var typedMediaPickerSingle = Model.Value<IPublishedContent>("footerlogo");
+                        if (typedMediaPickerSingle != null)
+                        {
+                            <img src="@typedMediaPickerSingle.Url" style="width:300px" alt="@typedMediaPickerSingle.Value("alt")" />
+                        }
+                    }
+                </div>
+            </div>
         </div>
     </footer>
 </body>
