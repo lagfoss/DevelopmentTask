@@ -16,6 +16,7 @@ body {
 
 h1 {
     color: $H1Color;
+    font-size: 70px;
 }
 
 h2 {
@@ -62,6 +63,39 @@ header {
             text-shadow: 0px 0px 5px $H2Color;
         }
     }
+}
+
+//HERO
+.hero {
+    height: 100vh;
+}
+
+.hero__text {
+    max-width: 500px;
+    padding-top: 200px;
+
+    h1 {
+        margin-bottom: 20px;
+    }
+
+    p {
+        line-height: 1.5;
+    }
+}
+
+//PRODUCTS FRONTPAGE
+.products__overview {
+    display: flex;
+}
+
+.product__container {
+    margin: auto;
+}
+
+.products__contact {
+    text-align: center;
+    width: 50%;
+    margin: auto;
 }
 
 

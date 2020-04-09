@@ -13,7 +13,8 @@ body {
   padding-left: 30px; }
 
 h1 {
-  color: #47054A; }
+  color: #47054A;
+  font-size: 70px; }
 
 h2 {
   color: #5C245F; }
@@ -43,6 +44,28 @@ header {
     header nav ul .nav__link:hover {
       color: #47054A;
       text-shadow: 0px 0px 5px #5C245F; }
+
+.hero {
+  height: 100vh; }
+
+.hero__text {
+  max-width: 500px;
+  padding-top: 200px; }
+  .hero__text h1 {
+    margin-bottom: 20px; }
+  .hero__text p {
+    line-height: 1.5; }
+
+.products__overview {
+  display: flex; }
+
+.product__container {
+  margin: auto; }
+
+.products__contact {
+  text-align: center;
+  width: 50%;
+  margin: auto; }
 
 .hero {
   background-color: #BE9BC0;

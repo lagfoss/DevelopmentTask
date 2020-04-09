@@ -6,16 +6,18 @@
 
     <div class="hero">
         <div class="wrapper">
-            <H1>@Model.Value("heroheadline")</H1>
-            @Model.Value("herotext")
+            <div class="hero__text">
+                <H1>@Model.Value("heroheadline")</H1>
+                <p>@Model.Value("herotext")</p>
+            </div>
         </div>
     </div>
     <main class="wrapper">
         <h2>@Model.Value("productsheadline")</h2>
         <h4>@Model.Value("productstext")</h4>
 
-        <section>
-            <div>
+        <section class="products__overview">
+            <div class="product__container">
                 <h3>@Model.Value("product1name")</h3>
                 @Model.Value("product1items")
                 <a href="#">
@@ -23,7 +25,7 @@
                     <p>Ekskl. moms</p>
                 </a>
             </div>
-            <div>
+            <div class="product__container">
                 <h3>@Model.Value("product2name")</h3>
                 @Model.Value("product2items")
                 <a href="#">
@@ -31,7 +33,7 @@
                     <p>Ekskl. moms</p>
                 </a>
             </div>
-            <div>
+            <div class="product__container">
                 <h3>@Model.Value("product3name")</h3>
                 @Model.Value("product3items")
                 <a href="#">
@@ -39,7 +41,7 @@
                     <p>Ekskl. moms</p>
                 </a>
             </div>
-            <div>
+            <div class="product__container">
                 <h3>@Model.Value("product4name")</h3>
                 @Model.Value("product4items")
                 <a href="#">
@@ -48,4 +50,8 @@
                 </a>
             </div>
         </section>
+        <div class="products__contact">
+            @Model.Value("productscontacttext")
+            <a href="#"><i class="fas fa-headset"></i>@Model.Value("productscontactbutton")</a>
+        </div>
     </main>

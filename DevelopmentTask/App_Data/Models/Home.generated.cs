@@ -129,6 +129,20 @@ namespace Umbraco.Web.PublishedModels
 		public string Product4Price => this.Value<string>("product4Price");
 
 		///<summary>
+		/// ProductsContactButton
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.0")]
+		[ImplementPropertyType("productsContactButton")]
+		public string ProductsContactButton => this.Value<string>("productsContactButton");
+
+		///<summary>
+		/// ProductsContactText
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.0")]
+		[ImplementPropertyType("productsContactText")]
+		public global::System.Web.IHtmlString ProductsContactText => this.Value<global::System.Web.IHtmlString>("productsContactText");
+
+		///<summary>
 		/// ProductsHeadline
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.6.0")]
